@@ -1,0 +1,364 @@
+
+*{
+    box-sizing: border-box;
+}
+
+/* start header */
+.header{
+    background: url("../images/header.jpeg") no-repeat top center  ;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+.header .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(103, 157, 165, 0.5);
+    color: white;
+}
+.header h1{
+    font-size: 50px;
+    margin-top: 30px;
+}
+.header .plan{
+    font-size: 25px;
+    border: solid 1px white;
+    padding: 7px;
+    width:45%;
+    margin-right:2.5%;
+    margin-left:2.5%
+}
+.header .order{
+    font-size: 25px;
+    border: solid 1px white;
+    padding: 7px;
+    width:95%;
+    margin-right:2.5%;
+    margin-left:2.5%;
+    margin-top: 5px;
+}
+
+@media(max-width:720px){
+    .header{
+        min-height: 300px;
+    }
+    .header h1{
+        font-size: 35px;
+    }
+    .header .plan{
+        float:none;
+        margin: 0 auto 7px;
+    }
+
+}
+/* end header */
+
+/* start features */
+.features .feat{
+    text-align: center;
+}
+/* end features */
+/* start aboutus */
+.aboutus{
+    background: #EEE;
+    padding: 30px 5%;
+    margin-top: 30px;
+}
+.aboutus h2{
+    font-size: 30px;
+    color: #3e3935;
+}
+.aboutus p{
+    color: #5a524c
+}
+
+/* end aboutus */
+/* start ourworks */
+.ourworks .image{
+    height:350px;
+}
+.ourworks img{
+    height:100%;
+}
+/* end ourworks */
+/* start pricing */
+.pricing-table{
+    background: #444;
+    color: #ffffff;
+    overflow: hidden;
+    padding-bottom:15px; 
+    position: relative;
+}
+@media(max-width:991px){
+    .pricing-table .pricing-plan{
+        width:100%;
+        margin-bottom: 5px;
+    }
+}
+@media(min-width:992px){
+    .pricing-table .pricing-plan:not(:first-of-type){
+        margin-left: 1%;
+    }
+    .pricing-table .pricing-plan{
+        width:32.666666%;
+    }
+    .pricing-table .pricing-plan.plus{
+        position: relative;
+        left:33.666666%;
+    }
+    .pricing-table .pricing-plan.gold{
+        position: relative;
+        right:33.666666%;
+    }
+}
+.pricing-table .pricing-plan{
+    border: 1px solid #EEE;
+}
+.pricing-table h2{
+    font-size: 32px;
+}
+.pricing-table h3,
+.pricing-table span
+{
+    margin: 18px 0;
+    font-size: 28px;
+}
+.pricing-table ul{
+    line-height: 1.5;
+    font-size: 25px;
+}
+/* end pricing */
+/* start whatsay */
+.whatsay {
+    color: #333;
+}
+.whatsay .person-say{
+    background: #EEE;
+    border: 1px solid #DDD;
+    padding:0 3%;
+    margin-bottom: 7px;
+}
+@media(max-width:991px){
+    .whatsay .person-say{
+        margin-left: 20%;
+        width:60%;
+    }  
+}
+@media(min-width:992px){
+    .whatsay .person-say:first-of-type{
+        margin-left: 10%;
+        width:80%;
+    }
+    .whatsay .person-say:not(:first-of-type){
+        width:49%;
+        margin-left: 1%;
+    }
+}
+.whatsay img{
+    margin-right: 20px;
+    margin-top: 7px;
+    
+}
+.whatsay h3{
+    width:calc(100% - 128px);
+    margin:15px 0 0 0;
+}
+.whatsay p{
+    margin-top:3px;
+    width:calc(100% - 128px);
+}
+@media(max-width:991px){
+    .whatsay .person-say{
+        text-align: center;
+    }
+    .whatsay img,
+    .whatsay h3,
+    .whatsay p{
+        float:none;
+        margin: auto;
+    }
+    .whatsay p{
+        width:90%;
+        margin-bottom: 3px;
+    }
+    
+}
+/* end whatsay */
+/* start info */
+.info{
+    background: #EEE;
+    padding: 30px 5%;
+    margin-top: 30px;
+}
+.info h2{
+    font-size: 30px;
+    color: #3e3935;
+}
+.info li{
+    display: inline-block;
+    background: #CCC;
+    padding:10px;
+}
+.info .content{
+    background:white;
+    padding:10px;
+}
+.info .selected{
+    background: white;
+}
+.info .content p:not(:first-of-type){
+    display: none;
+}
+/* end info */
+/* start footer */
+.footer{
+    height:20px;
+    background: #222;
+    color:white;
+}
+/* end footer */
+@media(max-width:420px){
+    .visible-xs{
+        display: block !important;
+    }
+    .hidden-xs{
+        display: none;
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .header .plan{
+        font-size: 15px;
+    }
+    .responsive-paragraph{
+        font-size: 22px  !important;
+        text-align: center  !important;
+        line-height: 1 !important;
+    }
+   
+   
+
+}
+
+
+
+@media(min-width:768px) and (max-width:991px){/*small screen rules*/
+    .visible-sm{
+        display: block !important;
+    }
+    .hidden-sm{
+        display: none;
+    }
+    .container{
+        width:738px;
+    }
+    .features .feat{
+        width:33.333333%;
+    }
+    .responsive-paragraph{
+        font-size: 22px  !important;
+        text-align: center  !important;
+        line-height: 1 !important;
+    }
+    .ourworks .image{
+        width:50%;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px){
+    .visible-md{
+        display: block !important;
+    }
+    .hidden-md{
+        display: none;
+    }
+    .container{
+        width:962px;
+    }
+    .features .feat{
+        width:33.333333%;
+    }
+    .ourworks .image{
+        width:33.3333333%;
+    }
+   
+}
+
+@media(min-width:1200px){
+    .visible-lg{
+        display: block !important;
+    }
+    .hidden-lg{
+        display: none;
+    }
+    .container{
+        width:1170px;
+    }
+    .features .feat{
+        width:33.333333%;
+    }
+    .ourworks .image{
+        width:33.333333%;
+    }
+    
+}
+
+
+/* start framework */
+.container{
+    margin:auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-center{
+    text-align: center;
+}
+
+/*clearfix*/
+    .cf:before,
+    .cf:after {
+        content: " "; 
+        display: table; 
+    }
+    
+    .cf:after {
+        clear: both;
+    }
+
+    .cf {
+        *zoom: 1;
+    }
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg{
+    display: none;
+}
+ .float-left{
+     float: left;
+ }
+.responsive-paragraph{
+    line-height: 1.5;
+    font-size: 25px;
+}
+.responsive-image{
+    width:100%;
+}
+.classic-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.rad-img{
+    border-radius: 50%;
+}
+.window-img{
+    padding: 3px;
+    background:#EEE;
+    border: 1px solid #DDD; 
+}
+/* end framework */

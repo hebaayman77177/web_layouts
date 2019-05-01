@@ -1,0 +1,186 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+/*general*/
+body{
+     box-sizing: border-box;
+     background: #5f6366;
+}
+/* start head */
+.head{
+    color: #edb5bf;
+    direction: rtl;
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-align: center;
+    background: #5f6366;
+    font-weight: 900;
+    /* position:relative; */
+} 
+.head h1{
+    margin-top:20%;
+}
+.head h4{
+    margin-top:20%;
+}
+.head i{
+    font-size: 35px;
+    cursor: pointer;
+    margin-top: 10%;
+}
+.head i:hover{
+    color:#e38c9c;
+}
+.alarms{
+    border-right:5px solid #4d6d9a;
+    border-left:5px solid #4d6d9a;
+    height: 100vh;
+    padding: 0;
+    background: #86b3d1;
+}
+
+ 
+.alarms> p{
+    background: #4d6d9a;
+    color:whitesmoke;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 1.7rem;
+    margin: 0;
+    padding:7px;
+} 
+.alarm-body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:calc(100vh - 65px);
+}
+/* .alarm-body::-webkit-scrollbar {
+    width: 0.5em;
+}
+.alarm-body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+  .alarm-body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+} */
+.alarm-body >div{
+    margin:7px 2px ;
+    text-align: center;
+    padding:3px 2px;
+    border-bottom: 1px solid #6c757d;
+    background: white;
+}
+.alarm-body >div:last-of-type{
+    border-bottom:0px;
+}
+/* .head p{
+    font-size: 1.5rem;
+} */
+/* end head */
+/* start chatbot */
+textarea {
+    resize: none;
+    outline: none;
+    overflow: hidden;
+  }
+
+#chatBox{
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+    right: 0;
+}
+#chatBox  .boxHeader{
+    background: #6c757d;
+    height: 35px;
+}
+#chatBox .fa-robot:before {
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    left: 23px;
+    top: 2.5px;
+}
+#chatBox .fa-minus:before {
+    color: white;
+    position: absolute;
+    right: 24px;
+    top: 5px;
+    font-size: 21px;
+    cursor: pointer;
+}
+#chatBox .fa-plus:before{
+    color: white;
+    position: absolute;
+    right: 24px;
+    top: 5px;
+    font-size: 21px;
+    cursor: pointer;
+}
+#chatBox .boxBody{
+    background: #EEE;
+    height:210px;
+    width:100%;
+    margin: 0;
+    overflow-y: scroll;
+}
+#chatBox .msg{
+    background: white;
+    margin-bottom: 9px;
+    overflow-wrap: break-word;
+    height: auto;
+
+}
+#chatBox .you{
+    margin-left: 20%;
+    margin-right:3%; 
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+#chatBox .other{
+    margin-right: 20%;
+    margin-left:3%; 
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+#chatBox .boxFooter{
+    background: #6c757d;
+    height:70px;
+    /*width:100%;*/
+}
+#chatBox .boxFooter .row{
+    margin: 0;
+    height: 100%;
+}
+#chatBox textarea{
+    padding-top:7px;
+}
+#chatBox .fa-chevron-circle-up{
+    padding:0;
+    font-size: 26px;
+}
+.fa-chevron-circle-up:before {
+    position: absolute;
+    top: 25px;
+    left: 15%;
+    transform: rotate(90deg);
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px )  { 
+   
+    #chatBox{
+        position: relative !important;
+        width: 75% !important;
+        margin:auto !important;
+    }
+ }
+/* end chatbot */
+
+/* start framework */
+.droid{
+    font-family: 'Droid Arabic Kufi', serif;
+}
+/* end framework */

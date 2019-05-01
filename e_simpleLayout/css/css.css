@@ -1,0 +1,460 @@
+/*
+ *color:#1abc9c,#444,#666
+ */
+
+/* start global */
+*{
+  
+  font-family: " Arial, Helvetica, sans-serif";
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  }
+  
+  
+  .active{
+    color: #1abc9c;
+    border-bottom: solid 1px #1abc9c;
+    
+  }
+  
+  /*end global*/
+  /* start body */
+ 
+  /* end body */
+  /* start framework*/
+  .container{
+   margin-left:10%;
+   margin-right:10%;
+   padding-top:1px;
+   padding-bottom:1px;
+  }
+  
+  .bradius{
+   -webkit-border-radius: 10px;
+   -ms-border-radius: 10px;
+   border-radius: 10px;
+  }
+  
+  .ulstyle{
+    
+    list-style: none;
+}
+
+  .ulstyle li{
+    display: inline-block;
+    padding: 10px;
+  }
+
+.astyle{
+  text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+ 
+.heading{
+  position: relative;
+  font-weight:normal;
+  color:#444;
+}
+.heading:after{
+  content: "";
+    border-bottom: solid 1px #444;
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 30px;
+}
+.hrstyle{
+  margin:40px;
+  color:#444;
+}
+
+.overlay{
+  height:100%;
+  width:100%;
+  top:0;
+  right:0;
+  left: 0;
+  bottom: 0;
+}
+  /*end frame work*/
+  
+  .navbar,
+  .header,
+  .services,
+  .ourteam,
+  .testimonials,
+  .projects,
+  .footer{
+    min-width:1000px;
+  }
+  /* start navbar */
+.navbar{
+  color: white;
+  position: absolute;
+  }
+  .navbar .container{
+    margin:1% 0% 0 5%;
+    overflow: hidden;
+    
+  }
+.navbar .brand{
+  float:left;
+  text-transform: uppercase;
+  width:30%;
+  
+  
+}
+.navbar ul a{
+  color: white;
+  
+}
+.navbar .links {
+
+  float:right;
+  width:70%;
+  
+}
+.navbar .links div{
+  float: right;
+}
+
+.navbar .links li:hover{
+    color: #1abc9c;
+    border-bottom: solid 1px #1abc9c;
+}
+
+
+
+/* end navbar */
+
+
+
+
+/* start header */
+.header{
+  
+  background: url("../images/header.jpg");
+  height:100%;
+}
+.header .overlay{
+  background:rgba(0,0,0,0.5);
+
+}
+ .header h2,
+ .header p{
+    text-align: center;
+    color:white;  
+ }
+ .header h2{
+   padding-top:25%;
+   margin:auto 0;
+ }
+
+
+
+/*end header */
+
+/* start services */
+.services{
+  overflow:hidden;
+
+}
+.services .heading{
+  margin-bottom:30px;
+  margin-top:40px;
+  
+  
+}
+.services .item{
+  float:left;
+  width:33.33333333333%;
+}
+
+.services .item h3{
+  font-weight:normal;
+  color:#444;
+}
+.services .item p{
+  color:#666;
+}
+.services .item i{
+  margin-top:20px;
+  margin-right:5%;
+  width:20%;
+  float:left;
+  color:#1abc9c;
+}
+
+.services .item div{
+  width:70%;
+  float:left;
+}
+/* end services */
+
+
+/* start our team */
+.ourteam{
+  overflow: hidden;
+}
+.ourteam p{
+  float:left;
+  width:35%;
+  color:#666;
+}
+.ourteam .container > div{
+  float:left;
+  width:13%;
+  margin-left: 1%;
+  position: relative;
+}
+.ourteam .overlay{
+  position: absolute;
+  background: rgba(26,188,156,0.5);
+  text-align:center;
+  color:white;
+  line-height:100px;
+  display:none;
+  
+  
+}
+.ourteam .container > div:hover .overlay{
+  display:block;
+  
+  }
+.ourteam div img{
+  width:100%;
+}
+/* end our team */
+
+/* start testimonials */
+.testimonials{
+  margin-top:40px;
+  background:url("../images/testiomonials.jpeg");
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  height: 250px;
+  position: relative;
+  text-align: center;
+  color: #CCC;
+}
+.testimonials h3 {
+  text-transform:uppercase;
+  margin-top:50px;
+  
+  
+}
+.testimonials .overlay{
+  background: rgba(0,0,0,0.6);
+  position: absolute
+}
+.testimonials .myslider > div{
+  display: none;
+}
+
+.testimonials .myslider .Active{
+  display: block;
+}
+.testimonials p{
+  margin-top:25px;
+  
+  
+}
+.testimonials p:last-of-type{
+  color: #1abc9c;
+  font-weight: bold;
+  font-size: larger;
+  
+}
+/* end testimonials */
+
+/* start projects */
+.projects{
+  min-height: 800px;
+}
+.projects .container{
+  margin-top:25px;         
+}
+.projects .ulstyle {
+  margin-top:30px;
+  padding-left: 0px;
+  
+}
+.projects .ulstyle li{
+  border: solid #534e4e 1px;
+  color: #534e4e;
+  font-weight: bold;
+  border-radius: 10px;
+  }
+  
+.projects .ulstyle .selected{
+  background:#1abc9c;
+}
+.projects .galary{
+  overflow: hidden;
+}
+
+.projects .galary .raw >div{
+  position: relative;
+  height:200px;
+  width:32.666666%;
+  float:left;
+  border-radius: 10px;
+  overflow:hidden;
+  margin-bottom: 10px;
+}
+.projects .galary .raw .overlay{
+  display:none;
+  background: rgba(26,188,156,0.5);
+  position: absolute;
+  text-align:center;
+  color:white;
+  line-height:250px;
+ 
+}
+
+.projects .galary .raw >div:hover .overlay{
+display:block;  
+}
+.projects .galary .raw .overlay span{
+  position:absolute;
+  top:50px;
+  right:10px;
+  
+}
+.projects .galary .raw >div img{
+  width:100%;
+  height:100%;
+}
+.projects .galary .raw >div:nth-child(2){
+  margin-left:1%;
+  margin-right:1%;
+}
+.projects .mix{
+  display: none;
+}
+/* end projects */
+
+/* start footer */
+.footer{
+  background:#232323;
+  color:#656262;
+  margin-top:10px;
+  padding-top:3px;
+  padding-bottom: 40px;
+}
+.footer .container {
+overflow:hidden;
+position: relative;
+padding-bottom: 20px
+}
+
+
+.footer .container >div{
+  float:left;
+  width:25%;
+}
+
+.footer .ulstyle{
+  padding-left: 0px;
+  margin-top:0px;
+}
+.footer .ulstyle li{
+  border: solid 1px #656262;
+  color:#CCC;
+  padding: 3px;
+  margin:2px;
+  margin-bottom: 7px;
+}
+
+.footer h3{
+  color:#CCC;
+}
+.footer i {
+  margin-top:5px;
+  border:solid 1px #656262;
+  padding: 3px;
+  margin-bottom: 10px;
+  color: #CCC;
+  
+}
+.footer .post{
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.footer .post >div{
+  float: left;
+}
+.footer .post >div:nth-child(1){
+  width:40%;
+  height:60px
+  
+}
+.footer .post >div:nth-child(2){
+  width:60%;
+  padding-left: 5px;
+  
+  
+}
+.footer .post >div:nth-child(2) h4{
+  margin:0px 0 0 4px;
+  color: #CCC;
+}
+
+.footer .post >div:nth-child(2) span{
+  display: block;}
+.footer .post img{
+  width:100%;
+  height:100%;
+}
+
+.footer .container>div:last-of-type p{
+  border-bottom: solid 1px #656262;
+  padding-bottom: 15px;
+  color: #CCC;
+  
+}
+.footer .copyrights{
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  left:0%;
+  padding-top: 10px;
+}
+
+ /*end footer*/
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

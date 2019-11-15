@@ -27,7 +27,7 @@
 
 <br/>
 <br/>
-- fb_simbleLayout_responsive
+- b_simbleLayout_responsive
 <br/>
 <br/>
 <img src="./imgs/i5.jpg">
